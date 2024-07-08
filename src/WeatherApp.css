@@ -1,0 +1,72 @@
+/* Base styles */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: #fff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+.weather-section {
+  margin-bottom: 40px;
+}
+
+.weather-details,
+.forecast-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.weather-details div,
+.forecast-details div {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 160px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.weather-details div:hover,
+.forecast-details div:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 1);
+}
+
+.weather-details div h3,
+.forecast-details div h3 {
+  margin: 15px 0;
+  font-size: 1.2em;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+@media (max-width: 600px) {
+  .weather-details div,
+  .forecast-details div {
+    width: 100%;
+  }
+}
